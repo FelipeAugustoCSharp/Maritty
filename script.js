@@ -6,7 +6,7 @@ const recorde = document.querySelector('.recorde')
 const changeMap = document.querySelector('.change-Map')
 const gameBoard = document.querySelector(".game-board")
 const mensagem = document.querySelector(".mensagem")
-
+const clickCelular = document.querySelector('.toSmartphones')
 let loop;
 let scoreInterval;
 
@@ -74,6 +74,13 @@ const jump = () => {
   }, 500);
 };
 
+const clickPular = () => {
+  kitty.classList.add('jump');
+
+  setTimeout(() => {
+    kitty.classList.remove('jump');
+  }, 500);
+}
 
 
 const chooseMap = () => {
@@ -92,8 +99,12 @@ changeMap.addEventListener('click', chooseMap)
 // Event para o botão de reiniciar o jogo
 button.addEventListener('click', startGame);
 
+//para celular
+clickCelular.addEventListener('click', clickPular)
+
 // Event  para o pulo do gato
 document.addEventListener('keydown', jump);
+
 
 // Iniciar o jogo pela primeira vez
 startGame();
