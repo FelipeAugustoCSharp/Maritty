@@ -13,6 +13,8 @@ let scoreInterval;
 let scoreRecorde = 0;
 let score = 0;
 alert("Feliz aniversário. é simples mas espero que aproveite este mini-game que fiz pra ti porque fiquei a madrugada fazendo ksks <3 COLOQUEI TUA FOTO ALI PRA VC FOCAR NESSA GOSTOSA E PERDER O GAME HEHE")
+alert("e como nao posso te levar em um almoço, eu quis fazer algo diferente e que você pudesse recordar ")
+
 // Função para iniciar ou reiniciar o jogo
 const startGame = () => {
   // Reiniciar as animações
