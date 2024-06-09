@@ -137,7 +137,8 @@
   .toSmartphones {
     display: flex;
     background-color: red; position: absolute;
-    right: 100px;
+    right: 6.25rem;
+    top: 3.125rem;
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
