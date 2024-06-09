@@ -12,7 +12,7 @@ let scoreInterval;
 
 let scoreRecorde = 0;
 let score = 0;
-alert("Feliz aniversário. é simples mas espero que aproveite este mini-game que fiz pra ti porque fiquei a madrugada de ontem fazendo ksks <3")
+alert("Feliz aniversário. é simples mas espero que aproveite este mini-game que fiz pra ti porque fiquei a madrugada fazendo ksks <3")
 // Função para iniciar ou reiniciar o jogo
 const startGame = () => {
   // Reiniciar as animações
