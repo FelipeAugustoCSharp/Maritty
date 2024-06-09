@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.game-board{
+  width: 80%;
+  height: 31.25rem;
+  border: 1px solid #222;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  background-image:url("img/cenario1.gif");
+  background-size: cover;
+  background-position: center;
+  border-bottom: pink 5px solid;
+}
+
+.mensagem{
+  width: 100%;
+  text-align: center;
+}
+
+.pipe {
+  width: 5rem;
+  position: absolute;
+  bottom: 0;
+  animation: pipe-animation 2s linear infinite;
+}
+
+.cloud:nth-child(1) {
+  width: 12rem;
+  height: 10rem;
+  position: absolute;
+  top: 50px;
+  animation: cloud-animation 13s linear infinite;
+}
+
+.cloud:nth-child(2) {
+  width: 13rem;
+  height: 12rem;
+  position: absolute;
+  top: 70px;
+  animation: cloud-animation 10s linear infinite;
+}
+
+.cloud:nth-child(3) {
+  width: 15rem;
+  height: 9rem;
+  position: absolute;
+  top: 70px;
+  animation: cloud-animation 9s linear infinite;
+}
+
+.kitty {
+  width: 9.375rem; 
+  position: absolute;
+  bottom: -10px;
+}
+
+.classificacao {
+  background-color: pink;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+  
+.btn-tryagain {
+  width: 10rem;
+  height: 3rem;
+  border: none;
+  border-radius: 10px;
+  color: pink;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color:black;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+    
+.jump {
+  animation: jump 500ms ease-out;
+}
+
+@keyframes cloud-animation {
+  from {
+    right: -80px;
+  } to{
+    right: 100%;
+  }
+}
+
+@keyframes pipe-animation {
+  from {
+    right: -200px;
+  } to{
+    right: 100%;
+  }
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0px
+  }
+  40%{
+    bottom: 164px;
+  }
+  50%{
+    bottom: 164px;
+  }
+  60%{
+    bottom: 164px;
+  }
+  100% {
+    bottom: 0px /*-14*/
+  }
+
+}
+
